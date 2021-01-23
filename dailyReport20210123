@@ -8,8 +8,6 @@
 如第2点中的2个注解用法，其中@Parameters需要配合xml文件进行传参
 4、xml方式实现方法级别，类级别，test级别上的多线程并行测试
 
-
-
 明天计划：
 1、testng自带测试报告和外部的ExtentReport测试报告配置和生成学习
 2、java注解+多线程
@@ -17,21 +15,6 @@
 难点和重点：
 1、xml方式实现方法级别，类级别，test级别上的多线程并行测试，执行xml后都是只有一个线程未出现多线程并行
 解决：还未解决
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 20210118
@@ -47,11 +30,7 @@
 3、BeforeGroups和AfterGroups，BeforeSuit和AfterSuit实践应用
 4、注解参数
 
-
 难点和重点：
-
-
-
 
 
 20210119
@@ -61,11 +40,9 @@
 3、BeforeGroups和AfterGroups，BeforeSuit和AfterSuit实践应用
 4、注解参数，enable,groups,
 
-
 明天计划：
 1、注解参数，其他参数
 2、参数化测试，通过xml文件参数化和DataProvider参数化
-
 
 难点和重点：
 1、resourse中的xml文件没有run入口
