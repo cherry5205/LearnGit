@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="4110" started-at="2021-01-23T08:24:59Z" finished-at="2021-01-23T08:25:03Z">
+    <groups>
+    </groups>
+    <test name="LearnGit" duration-ms="4110" started-at="2021-01-23T08:24:59Z" finished-at="2021-01-23T08:25:03Z">
+      <class name="com.course.testng.TimeOutTest">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.course.testng.TimeOutTest@4a2a4591]" name="test1" duration-ms="2028" started-at="2021-01-23T16:24:59Z" finished-at="2021-01-23T16:25:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="FAIL" signature="test2()[pri:0, instance:com.course.testng.TimeOutTest@4a2a4591]" name="test2" duration-ms="2002" started-at="2021-01-23T16:25:01Z" finished-at="2021-01-23T16:25:03Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method com.course.testng.TimeOutTest.test2() didn't finish within the time-out 2000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method com.course.testng.TimeOutTest.test2() didn't finish within the time-out 2000]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- com.course.testng.TimeOutTest -->
+    </test> <!-- LearnGit -->
+  </suite> <!-- Default Suite -->
+</testng-results>
