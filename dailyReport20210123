@@ -17,22 +17,6 @@
 解决：还未解决
 
 
-20210118
-学习内容：
-1、idea上安装testng插件，导入testng jar包
-2、学习testng基本命令，Test,BeforeClass,AfterClass,BeforeSuit,AfterSuit,BeforeTest,AfterTest,BeforeGroups,AfterGrops
-
-
-
-明天计划：
-1、testng配置文件
-2、BeforeTest,AfterTest和BeforClass,AfterClass的区别
-3、BeforeGroups和AfterGroups，BeforeSuit和AfterSuit实践应用
-4、注解参数
-
-难点和重点：
-
-
 20210119
 学习内容：
 1、testng配置文件
@@ -49,4 +33,22 @@
 解决：
 配置文件中suite标签写成了suit
 idea中run-》edit configuration中把xml文件路径配置进去
+
+
+
+20210118
+学习内容：
+1、idea上安装testng插件，导入testng jar包
+2、学习testng基本命令，Test,BeforeClass,AfterClass,BeforeSuit,AfterSuit,BeforeTest,AfterTest,BeforeGroups,AfterGrops
+
+明天计划：
+1、testng配置文件
+2、BeforeTest,AfterTest和BeforClass,AfterClass的区别
+3、BeforeGroups和AfterGroups，BeforeSuit和AfterSuit实践应用
+4、注解参数
+
+难点和重点：
+
+
+
 
