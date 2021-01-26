@@ -26,5 +26,6 @@
         <jarDirectory url="jar://D:/Downloads/testng-6.13.1.jar!/" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="java" level="project" />
   </component>
 </module>

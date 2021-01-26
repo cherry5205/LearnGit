@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="生成测试报告">
+    <test name="外部测试报告生成">
+        <classes name="测试外部报告运行类">
+            <class name="com.tester.extent.demo.TestMethodsDemo"/>
+            <methods>
+                <include name="test1"/>
+                <include name="test2"/>
+                <include name="test3"/>
+                <include name="logDemo"/>
+            </methods>
+        </classes>
+    </test>
+    <listeners>
+<!--        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>-->
+          <listener class-name="com.tester.extent.demo.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>

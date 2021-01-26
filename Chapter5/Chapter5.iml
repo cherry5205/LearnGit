@@ -11,5 +11,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="testng-6.13.1" level="project" />
+    <orderEntry type="library" name="java" level="project" />
   </component>
 </module>
