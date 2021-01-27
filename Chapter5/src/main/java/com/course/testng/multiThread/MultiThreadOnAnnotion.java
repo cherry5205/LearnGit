@@ -3,7 +3,7 @@ package com.course.testng.multiThread;
 import org.testng.annotations.Test;
 
 public class MultiThreadOnAnnotion {
-    @Test(invocationCount = 6,threadPoolSize = 3)
+    @Test(invocationCount = 3,threadPoolSize = 3)
     public void test()
     {
         System.out.println(1);

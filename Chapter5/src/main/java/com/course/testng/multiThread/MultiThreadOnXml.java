@@ -1,7 +1,5 @@
 package com.course.testng.multiThread;
-
 import org.testng.annotations.Test;
-
 public class MultiThreadOnXml {
     @Test
     public void test1()
