@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatix.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.course.model">
+    <select id="loginUser" parameterType="com.course.model.User" resultType="Integer">
+            select count(*)  from user
+            where name = #{name}
+            and password = #{password}
+    </select>
+    <insert id="addUser" parameterType="com.course.model.User">
+        insert into user(name,password,age,sex,permission,deleted)
+        values(#{name},#{password},#{age},#{sex},#{permission},#{deleted})
+    </insert>
+    <select id="getUserInfo" parameterType="com.course.model.User" resultType="com.course.model.User">
+        select * from user
+        <trim prefix="where" prefixOverrides="and">
+        <if test="null != id and '' != id">
+            and id = #{id}
+        </if>
+        <if test="null != name and '' != name">
+            and name = #{name}
+        </if>
+        <if test="null != password and '' != password">
+            and password = #{password}
+        </if>
+        <if test="null != age and '' != age">
+            and age = #{age}
+        </if>
+        <if test="null != sex and '' != sex">
+            and sex = #{sex}
+        </if>
+        <if test="null != permission and '' != permission" >
+            permission = #{permission}
+        </if>
+
+        <if test="null != deleted and '' != deleted">
+            and deleted = #{deleted}
+        </if>
+    </trim>
+</select>
+<update id="updateUser" parameterType="com.course.model.User">
+update user
+<trim prefix="set" suffixOverrides=",">
+    <if test="null != name and '' != name" >
+        name = #{name},
+    </if>
+    <if test="null != password and '' != password" >
+        password = #{password},
+    </if>
+    <if test="null != age and '' != age" >
+        age = #{age},
+    </if>
+    <if test="null != sex and '' != sex" >
+        sex = #{sex},
+    </if>
+    <if test="null != permission and '' != permission" >
+        permission = #{permission},
+    </if>
+    <if test="null != deleted and '' != deleted" >
+        deleted = #{deleted},
+    </if>
+</trim>
+where id = #{id}
+    </update>
+</mapper>

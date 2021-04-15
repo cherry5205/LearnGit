@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="moco和httpclient测试">
+    <test name="get/post请求">
+        <classes>
+            <class name ="com.course.httpclient.cookies.MyCookiesForPost"/>
+            <class name ="com.course.httpclient.cookies.MyCookiesForGet"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.tester.extent.demo.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>

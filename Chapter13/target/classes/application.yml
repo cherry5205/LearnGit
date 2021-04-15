@@ -1,0 +1,17 @@
+server:
+  port: 8888
+logging:
+  path: logs
+  file: userManager.log
+spring:
+  application:
+    name: userManager
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.137.133:3306/course
+    username: whp
+    password: whp
+mybatis:
+  type-aliases-package: com.course.model
+  mapper-locations:
+    - mapper/*
