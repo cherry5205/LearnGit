@@ -1,4 +1,4 @@
-package com.tester.extent.demo;
+package com.course.config;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.ResourceCDN;
